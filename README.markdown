@@ -1,6 +1,6 @@
 # PluginDebug
 
-PLuginDebug adds builtin debug logging to MT's Plugin.pm.
+PluginDebug adds builtin debug logging to MT's Plugin.pm.
 
 ## Configuration
 
