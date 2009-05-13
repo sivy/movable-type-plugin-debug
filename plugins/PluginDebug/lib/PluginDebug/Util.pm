@@ -4,7 +4,6 @@ use strict;
 use warnings;
 
 sub init {
-    local $SIG{__WARN__} = sub { };
     require MT::Plugin;
     *MT::Plugin::debuglog = \&debuglog;
 }
