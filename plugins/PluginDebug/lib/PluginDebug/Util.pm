@@ -20,6 +20,7 @@ sub debuglog {
         MT->log(
             {   message => "$id: $msg",
                 level   => MT::Log::DEBUG(),
+                category => 'plugin_debug'
             }
         );
     }
