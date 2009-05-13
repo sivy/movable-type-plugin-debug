@@ -1,0 +1,13 @@
+name: PluginDebug
+id: PluginDebug
+key: PluginDebug
+author_link: http://www.sixapart.com/
+author_name: Six Apart, Ltd.
+description: Add debug logging to Plugin.pm
+version: 0.1.0
+plugin_link: http://www.sixapart.com/
+
+applications:
+    cms:
+        callbacks:
+            init_app: $PluginDebug::PluginDebug::Util::init
