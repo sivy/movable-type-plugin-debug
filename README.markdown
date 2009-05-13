@@ -8,7 +8,11 @@ Add the `PluginDebug` directive to your mt-config.cgi
 
     PluginDebug mypluginid,myotherpluginid
 
-The values are the plugin IDs of the plugins for which you want to turn on debug logging.
+The values are the plugin IDs of the plugins for which you want to turn on debug logging. If you're feeling lazy,
+
+    PluginDebug all
+
+will turn on debug logging for any plugin.
 
 ## Usage
 
