@@ -1,6 +1,6 @@
 # PluginDebug
 
-PluginDebug adds built-in (bolted on?) debug logging to MT's Plugin.pm.
+PluginDebug adds built-in (bolted on?) debug logging to MT's Component.pm.
 
 ## Configuration
 
@@ -12,7 +12,7 @@ The values are the plugin IDs of the plugins for which you want to turn on debug
 
     PluginDebug all
 
-will turn on debug logging for any plugin.
+will turn on debug logging for any plugin/addon.
 
 ## Usage
 
