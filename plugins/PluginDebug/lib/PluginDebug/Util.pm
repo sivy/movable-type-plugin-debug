@@ -10,6 +10,7 @@ sub init {
 }
 
 sub debuglog {
+    return unless MT->config->PluginDebug;
     my ( $plugin, $msg ) = @_;
     my $id = $plugin->id;
     require MT::Log;
