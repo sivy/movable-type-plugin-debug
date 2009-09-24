@@ -9,20 +9,18 @@ sub init {
 }
 
 sub debuglog {
-    return unless MT->config->PluginDebug;
+    return
+        unless MT->config->PluginDebug
+            && MT->config->PluginDebug =~ /all|$id/i;
     my ( $component, $msg ) = @_;
     my $id = $component->id;
     require MT::Log;
-    if (   MT->config->PluginDebug eq 'all'
-        || MT->config->PluginDebug =~ /$id/i )
-    {
-        MT->log(
-            {   message => "$id: $msg",
-                level   => MT::Log::DEBUG(),
-                category => 'component_debug'
-            }
-        );
-    }
+    MT->log(
+        {   message  => "$id: $msg",
+            level    => MT::Log::DEBUG(),
+            category => 'component_debug'
+        }
+    );
 }
 
 1;
